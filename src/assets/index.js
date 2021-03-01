@@ -4,5 +4,6 @@ import calender from './image/calender.jpeg';
 import checkout from './image/checkout.jpg';
 import history from './image/history.png';
 import logout from './image/logout.png';
+import absensi from './image/absensi.jpeg';
 
-export {welcome, checkin, calender, checkout, history, logout};
+export {welcome, checkin, absensi, calender, checkout, history, logout};

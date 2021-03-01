@@ -22,9 +22,9 @@ const Router = () => {
         component={WelcomeAuth}
         options={{headerShown: false}}
       />
+      <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Register" component={Register} />
-      <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Splash" component={Splash} />
       <Stack.Screen name="Checkin" component={Checkin} />
       <Stack.Screen name="Checkout" component={Checkout} />

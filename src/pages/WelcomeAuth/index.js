@@ -2,9 +2,15 @@ import React, {useEffect} from 'react';
 import {View, Text, Image} from 'react-native';
 import ActionButton from './ActionButton';
 import {colors} from '../../utils';
-import {welcome} from '../../assets';
+import {absensi} from '../../assets';
 
 const WelcomeAuth = ({navigation}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.replace('Home');
+    }, 5000);
+  });
+
   // 1. membuat fungsi perpindahan page/naivgasi
   //navigation.navigate adalah fungsi navigasi yang bisa untuk kembali pagenya
   //dari login mwu kembali ke page wleocme dan bgtu jga sebaliknya
@@ -16,8 +22,8 @@ const WelcomeAuth = ({navigation}) => {
   // di pagenya
   return (
     <View style={styles.wrapper.page}>
-      <Image source={welcome} style={styles.wrapper.ilustrasi} />
-      <Text style={styles.text.welcome}>Selamat Datang Di App Gojek</Text>
+      <Image source={absensi} style={styles.wrapper.ilustrasi} />
+      <Text style={styles.text.welcome}>Selamat Datang Di App Absensi</Text>
 
       <ActionButton
         desc="Silahkan masuk, jika anda sudah memiliki akun"
@@ -43,8 +49,9 @@ const styles = {
       flex: 1,
     },
     ilustrasi: {
-      width: 219,
-      height: 117,
+      width: 200,
+      height: 200,
+      marginTop: 20,
       marginBottom: 10,
     },
   },
